@@ -7,7 +7,7 @@ function Homepage() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="bg-[url('/assets/images/Hero.jpg')] bg-cover bg-right lg:h-screen flex items-center">
+      <div className="bg-[url('/assets/images/Hero.jpg')] bg-cover  bg-right lg:h-screen flex items-center">
         <div className="w-full xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4  mt-25">
           <div className="flex flex-col gap-4 lg:gap-6 justify-start">
 

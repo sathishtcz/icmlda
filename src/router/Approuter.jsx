@@ -10,6 +10,7 @@ import Scopepage from "../component/Scopepage/Scopepage";
 import Aboutpage from "../component/Aboutpage/Aboutpage";
 import Home from "../component/Home/Home";
 import Scrolltotop from "./scrolltotop";
+import Committeepage from "../component/Committeepage/Committeepage";
 
 export default function AppRouter() {
     return (
@@ -21,7 +22,8 @@ export default function AppRouter() {
                     <Route path="/about" element={<Aboutpage />} />
                     <Route path="/scope" element={<Scopepage />} />
                     <Route path="/editorial-board" element={<Editorialpage />} />
-                    <Route path="/organizing-committee" element={<Organizingpage />} />
+                    {/* <Route path="/organizing-committee" element={<Organizingpage />} /> */}
+                    <Route path="/organizing-committee" element={<Committeepage/>} />
                     <Route path="/key-dates" element={<Keydatepage />} />
                     <Route path="/conference-tracks" element={<Conferencepage />} />
                     <Route path="/contactus" element={<Contactpage />} />

@@ -36,7 +36,7 @@ export default function Keydates() {
             <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Stay on track with these important milestones for the International Conference on Machine Learning and Data Analytics (ICMLDA 2025). This timeline outlines all the crucial deadlines for abstract submissions, paper acceptance, registrations, and final preparations. Whether you're a presenter, participant, or sponsor, these dates will help you stay organized and plan your involvement effectively.</p>
             <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Mark your calendar early, prepare your research in advance, and take advantage of early-bird opportunities to ensure a smooth and rewarding conference experience. We encourage all contributors to meet these deadlines to benefit from timely reviews, early confirmations, and maximum visibility within the conference program. Don't miss your chance to be part of this leading international event in the fields of machine learning and data analytics!</p>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5 max-w-3xl w-full">
             {[
               { label: "Abstract Submission Deadline", date: "August 10, 2025" },
               { label: "Full Paper Submission Deadline", date: "August 10, 2025" },
@@ -45,15 +45,16 @@ export default function Keydates() {
               { label: "Registration Deadline", date: "September 15, 2025" },
               { label: "Conference Dates", date: "October 24–26, 2025" }
             ].map((item, index) => (
-              <div key={index} className="flex gap-2">
-                <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
-                <div className="grid grid-cols-[250px_1fr]   inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px]">
+              <div key={index} className="flex gap-2 items-start">
+                <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0 " />
+                <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
                   <span className="inter-medium text-black whitespace-nowrap">{item.label}</span>
-                  <span className="">: {item.date}</span>
+                  <span>: {item.date}</span>
                 </div>
               </div>
             ))}
           </div>
+
 
         </div>
       </div>
@@ -68,7 +69,7 @@ export default function Keydates() {
             <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Join a global network of innovators, researchers, professionals, and thought leaders at the International Conference on Machine Learning and Data Analytics (ICMLDA 2025). Register today to ensure your participation in one of the most anticipated conferences in the field of intelligent data technologies and applied AI. Whether you're presenting a paper, attending to gain insights, or exploring collaborative opportunities, your registration gives you full access to a dynamic and enriching experience. Early registration is highly encouraged to take advantage of discounted rates and to secure your place before seats fill up.</p>
             {/* <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Mark your calendar early, prepare your research in advance, and take advantage of early-bird opportunities to ensure a smooth and rewarding conference experience. We encourage all contributors to meet these deadlines to benefit from timely reviews, early confirmations, and maximum visibility within the conference program. Don't miss your chance to be part of this leading international event in the fields of machine learning and data analytics!</p> */}
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5 max-w-3xl w-full">
             {[
               { label: "Account Name", date: "ICMLDA Conference" },
               { label: "Account Number", date: "123456789" },
@@ -76,9 +77,9 @@ export default function Keydates() {
               { label: "IFSC Code", date: "TMBL03000045" },
               { label: "MICR ", date: "605060005" },
             ].map((item, index) => (
-              <div key={index} className="flex gap-2">
+              <div key={index} className="flex gap-2 items-start">
                 <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
-                <div className="grid grid-cols-[250px_1fr]   inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px]">
+                <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
                   <span className="inter-medium text-black whitespace-nowrap">{item.label}</span>
                   <span className="">: {item.date}</span>
                 </div>

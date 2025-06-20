@@ -60,8 +60,8 @@ export default function ConferenceTracks() {
                             key={index}
                             className="bg-[#EAF6FE] rounded-lg overflow-hidden shadow-md border border-gray-100 p-6"
                         >
-                            <div className="flex items-center mb-4">
-                                <div className="bg-[#22367C] p-2 rounded-lg">
+                            <div className="flex items-center mb-4 ">
+                                <div className="bg-[#22367C] p-2 rounded-lg flex-shrink-0">
                                     {feature.icon}
                                 </div>
                                 <h3 className="ml-4 text-xl font-semibold text-gray-900">{feature.title}</h3>
