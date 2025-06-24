@@ -54,22 +54,22 @@ export default function Editorboard() {
             </div>
 
             <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 mx-auto h-full max-w-[80rem]">
                     <div>
-                        <div className="bg-white border-3 border-gray-300 rounded-lg ">
+                        <div className="bg-white border-3 border-gray-300 rounded-lg h-full">
                             <div className="bg-[#22367C] h-48 rounded-t z-10"></div>
                             <div className="flex flex-col gap-3 items-center p-3 -mt-29 z-20">
                                 <div className="border-2 border-[#22367C] p-8 rounded-full bg-white ">
                                     <img src="/assets/images/editor1.png" alt="User" className='w-30 h-32' />
                                 </div>
-                                <p className="inter-medium text-2xl text-black">Dr John Smith</p>
-                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Prince Mohammed Bin Fahd University</p>
-                                    <div className="flex gap-2">
+                                <p className="inter-medium text-2xl text-black">A.L.S Saabith</p>
+                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Eastern University Sri Lanka</p>
+                                    {/* <div className="flex gap-2">
                                         <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Expertise :</span> Machine Learning
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> USA
+                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> Sri Lanka
                                         </div>
                                     </div>
                                 </div>
@@ -78,20 +78,20 @@ export default function Editorboard() {
                         </div>
                     </div>
                     <div>
-                        <div className="bg-white border-3 border-gray-300 rounded-lg ">
+                        <div className="bg-white border-3 border-gray-300 rounded-lg h-full">
                             <div className="bg-[#22367C] h-48 rounded-t z-10"></div>
                             <div className="flex flex-col gap-3 items-center p-3 -mt-29 z-20">
                                 <div className="border-2 border-[#22367C] p-8 rounded-full bg-white ">
                                     <img src="/assets/images/editor1.png" alt="User" className='w-30 h-32' />
                                 </div>
-                                <p className="inter-medium text-2xl text-black">Dr John Smith</p>
-                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Prince Mohammed Bin Fahd University</p>
-                                    <div className="flex gap-2">
+                                <p className="inter-medium text-2xl text-black">A.S. Hafiza Binti Abas</p>
+                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">University of Technology Malaysia</p>
+                                    {/* <div className="flex gap-2">
                                         <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Expertise :</span> Machine Learning
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> USA
+                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> Malaysia
                                         </div>
                                     </div>
                                 </div>
@@ -100,20 +100,20 @@ export default function Editorboard() {
                         </div>
                     </div>
                     <div>
-                        <div className="bg-white border-3 border-gray-300 rounded-lg ">
+                        <div className="bg-white border-3 border-gray-300 rounded-lg h-full">
                             <div className="bg-[#22367C] h-48 rounded-t z-10"></div>
                             <div className="flex flex-col gap-3 items-center p-3 -mt-29 z-20">
                                 <div className="border-2 border-[#22367C] p-8 rounded-full bg-white ">
                                     <img src="/assets/images/editor1.png" alt="User" className='w-30 h-32' />
                                 </div>
-                                <p className="inter-medium text-2xl text-black">Dr John Smith</p>
-                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Prince Mohammed Bin Fahd University</p>
-                                    <div className="flex gap-2">
+                                <p className="inter-medium text-2xl text-black">Ahmad Ilham</p>
+                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Universitas Muhammadiyah Semarang</p>
+                                    {/* <div className="flex gap-2">
                                         <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Expertise :</span> Machine Learning
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> USA
+                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> Indonesia
                                         </div>
                                     </div>
                                 </div>
