@@ -127,7 +127,7 @@ export default function PaperSub() {
             </div>
 
 
-            <div className="xl:max-w-[1400px]  md:max-w-[920px] mx-auto lg:mt-18 mt-5">
+            <div className="xl:max-w-[1400px]  md:max-w-[920px] mx-auto lg:mt-18 mt-5 p-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2  lg:h-full lg:items-stretch">
                     <div className=" w-full h-full">
                         <div className="bg-[#22367C]  p-6 h-full rounded-tl-lg rounded-bl-lg">
