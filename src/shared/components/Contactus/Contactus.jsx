@@ -38,7 +38,7 @@ export default function Contactus() {
             //     formDataToSend.append('Paper_File', formData.Paper_File);
             // }
 
-            const response = await fetch('http://192.168.29.12/ICMLDA/Icmlda/contact.php', {
+            const response = await fetch('http://192.168.29.11/ICMLDA/Icmlda/contact.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
@@ -110,7 +110,7 @@ export default function Contactus() {
                                     <div className="flex flex-col  items-center">
                                         <TfiEmail className="text-[#FABF2B] text-4xl flex-shrink-0" />
                                         <p className="text-[16px] text-gray-400 inter-medium mt-2">Write To Us</p>
-                                        <p className="text-white text-2xl inter-medium text-wrap break-all">icmlda.conference@gmail.com</p>
+                                        <p className="text-white text-2xl inter-medium text-wrap break-all">info.icmlda@gmail.com</p>
                                     </div>
                                     <div className="flex flex-col  items-center">
                                         <TfiLocationPin className="text-[#FABF2B] text-5xl flex-shrink-0" />

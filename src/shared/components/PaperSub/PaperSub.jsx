@@ -67,7 +67,7 @@ export default function PaperSub() {
                 formDataToSend.append('Paper_File', formData.Paper_File);
             }
 
-            const response = await fetch('http://192.168.29.12/ICMLDA/Icmlda/mail.php', {
+            const response = await fetch('http://192.168.29.11/ICMLDA/Icmlda/mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });

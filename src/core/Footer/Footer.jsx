@@ -1,5 +1,8 @@
 import React from 'react';
+import { BiSolidPhoneCall } from 'react-icons/bi';
 import { FaEnvelope, FaGlobe } from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io';
+import { IoLocationSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -28,7 +31,7 @@ const Footer = () => {
           </div>
           <div className='lg:mx-auto md:text-left text-start '>
             <h4 className="lg:text-xl text-lg font-bold mb-2 ">Quick Links</h4>
-            <ul className=' lg:text-base '>
+            <ul className=' lg:text-base list-disc list-inside'>
               <li><a href="/" className="hover:underline">Home</a></li>
               <li><a className="hover:underline w-fit"> <Link to='/about'>About the Conference</Link></a></li>
               <li><a className="hover:underline"><Link to='/scope'>Scope</Link> </a></li>
@@ -40,7 +43,7 @@ const Footer = () => {
             <div className='flex gap-4 flex-wrap justify-start items-start '>
               <div className=''>
                 <h4 className="lg:text-xl text-lg font-bold mb-2 ">Registration Guide</h4>
-                <ul className="lg:text-base ">
+                <ul className="lg:text-base list-disc list-inside">
                   <li><a className="hover:underline"><Link to='/key-dates'>Key Dates</Link> </a></li>
                   <li><a className="hover:underline"><Link to='/conference-tracks'>Conference Tracks</Link></a></li>
                   <li><a className="hover:underline"><Link to='/paper-submission'>Paper submission </Link>  </a></li>
@@ -53,9 +56,9 @@ const Footer = () => {
               <div className=''>
                 <h4 className="lg:text-xl text-lg font-bold mb-2 ">Contact Info</h4>
                 <ul className="lg:text-base ">
-                  <li><a className="hover:underline"><Link to=''>Chennai, Tamil Nadu</Link></a></li>
-                  <li><a className="hover:underline"><Link to=''>icmlda.conference@gmail.com</Link></a></li>
-                  <li><a className="hover:underline"><Link to=''>+91 0101010101</Link></a></li>
+                  <li><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><IoLocationSharp className='text-lg'/>Chennai, Tamil Nadu</Link></a></li>
+                  <li className='wrap-anywhere xl:wrap-normal'><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><IoIosMail className="text-lg"/>info.icmlda@gmail.com</Link></a></li>
+                  <li><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><BiSolidPhoneCall   className='text-lg'/>+91 0101010101</Link></a></li>
                 </ul>
               </div>
             </div>
