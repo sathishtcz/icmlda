@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function organizingcommittee() {
+export default function Organizingcommittee() {
   return (
     <>
       <div className="relative bg-cover bg-center flex flex-col items-start justify-center pt-[50px] sm:pt-[60px] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[400px] 2xl:h-[400px]" style={{ backgroundImage: "url('/assets/images/Banner.jpg')" }} >

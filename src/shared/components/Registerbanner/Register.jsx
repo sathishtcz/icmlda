@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function Register() {
@@ -8,9 +9,9 @@ function Register() {
                     <div className="w-full flex flex-col items-center justify-center py-12 lg:py-22  px-1 gap-5">
                         <p className="inter-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">Register for exclusive event?</p>
                         <p className="inter-regular text-white sm:text-base md:text-lg lg:text-[16px]  leading-[30px] text-center max-w-xl">Register now and secure your spot today to connect with global experts, explore emerging technologies, and be part of shaping the future of computer science.</p>
-                        <div className="text-center mt-4 lg:mt-0">
+                        <Link to="/paper-submission" className="text-center mt-4 lg:mt-0">
                             <button className="bg-[#FFDB00] inter-medium text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl text-black transition-all duration-200 p-2 px-3 rounded cursor-pointer">Register Here </button>
-                        </div>
+                        </Link>
 
                     </div>
                 </div>

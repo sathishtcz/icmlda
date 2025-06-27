@@ -1,4 +1,3 @@
-import React from 'react'
 import Organizingcommittee from "../../shared/components/Organizingcommittee/Organizingcommittee"
 
 function Committeepage() {
