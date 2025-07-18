@@ -2,6 +2,205 @@ import { Link } from "react-router-dom";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 export default function Editorboard() {
+
+    const editors = [
+        {
+            name: "Sidaoui Boutkhil",
+            department: "Department of Computer Science",
+            university: "Salhi Ahmed University of Naama",
+            location: "Algeria"
+        },
+
+        {
+            name: "Ridwan Mustofa",
+            department: "Assistant Professor",
+            university: "Khulna University of Engineering & Technology",
+            location: "Bangladesh"
+        },
+
+        {
+            name: "G.Vinodhini",
+            department: "Department of Information Technology",
+            university: "Annamalai University",
+            location: "India"
+        },
+
+        {
+            name: "Jhanghiz Syahrivar",
+            university: "President University",
+            location: "Indonesia"
+        },
+        {
+            name: "Bibhakar Das",
+            university: "Khulna University of Engineering and Technology",
+            location: "Bangladesh"
+        },
+        {
+            name: "Ajanthaa Lakkshmanan",
+            department: "Assistant Professor, Department of Computer Science",
+            university: "Sathyabama Institute of Science and Technology",
+            location: "India"
+        },
+
+
+        {
+            name: "Johan Hendri Prasetyo",
+            university: "Universitas Nusa Mandiri",
+            location: "Indonesia"
+        },
+        {
+            name: "Tariq Javid",
+            department: "Professor, Department of Biomedical Engineering",
+            university: "Hamdard University",
+            location: "Pakistan"
+        },
+        {
+            name: "Yogi Pratama",
+            department: "Department of Medical Informatics",
+            university: "Al Insyirah Institute of Health and Technology",
+            location: "Indonesia"
+        },
+        {
+            name: "Twana A. Hamad",
+            university: "Harran University",
+            location: "Turkey"
+        },
+        {
+            name: "Ammar Amjad",
+            university: " National Yang ming chiao tung university",
+            location: "Taiwan"
+        },
+        {
+            name: "Dr. Mujtaba Korai",
+            department: "Department of Computer Engineering",
+            university: "Gachon University",
+            location: "South Korea"
+        },
+        {
+            name: "Abderrezak Benyahia",
+            university: " Associate Professor",
+            location: "Algeria"
+        },
+        {
+            name: "Ziquan Feng",
+            department: "Department of Multicultural Pedagogy",
+            university: "Hanyang University",
+            location: "South Korea"
+        },
+        {
+            name: "Kabelo Given Chuma",
+            department: "Department of Information Science",
+            university: "College of Human Sciences, University of South Africa",
+            location: "South Africa"
+        },
+        {
+            name: "Asad Aziz",
+            department: "Lecturer, Department of Geography",
+            university: "University of Gujrat",
+            location: "Pakistan"
+        },
+
+        {
+            name: "Mohammad Javad Fadaeieslam",
+            department: "Assistant professor, Department of Electrical and Computer Engineering",
+            university: "Semnan University",
+            location: "Iran"
+        },
+
+        {
+            name: "Karthika K",
+            department: "Department of Computer Science",
+            university: "Sri Sairam College of Engineering",
+            location: "India"
+        },
+        {
+            name: "Shazia Riaz",
+            department: "Assistant Professor, Department of Computer Science",
+            university: "Women University Faisalabad",
+            location: "Pakistan"
+        },
+        {
+            name: "Nguyen Van Thieu",
+            department: "Faculty of Computer Science",
+            university: "PHENIKAA University",
+            location: "Vietnam"
+        },
+
+        {
+            name: "Saminda Premaratne",
+            department: "Department of Information Technology",
+            university: "University of Moratuwa",
+            location: "Sri Lanka"
+        },
+        {
+            name: "Qiang Tong",
+            university: "Shenzhen Institute of Information Technology",
+            location: "China"
+        },
+        {
+            name: "Asma Kausar Mukhtar Ali",
+            department: "Department of Information Technology",
+            university: " MJIIT University of Technology",
+            location: "Malaysia"
+        },
+        {
+            name: "Bawar Mohammed Faraj",
+            department: "Department of Information Technology",
+            university: "University of Halabja Computer Science",
+            location: "Iraq"
+        },
+        {
+            name: "Omar Bin Samin",
+            department: "Lecturer,  Center of Excellence in Information Technology",
+            university: "Institute of Management Sciences",
+            location: "Pakistan"
+        },
+        {
+            name: "Saman Almufti",
+            department: "Department of Computer Science",
+            university: "Nawroz University",
+            location: "Iraq"
+        },
+        {
+            name: "Mahdiyeh Khazaneha",
+            department: "Department of Neurology Research Center",
+            university: "Kerman University of Medical Sciences",
+            location: "Iran"
+        },
+
+
+        {
+            name: "Ledan Qian",
+            department: "Department of  Information Technology",
+            university: "Wenzhou University",
+            location: "China"
+        }, {
+            name: "Muhammd Umer Farooq",
+            department: "Assistant Professor, Department of Computer Science and Information Technology",
+            university: "NED University of Engineering and Technology",
+            location: "Pakistan"
+        },
+        {
+            name: "Bilal Saoud",
+            department: "Department of Electrical Engineering",
+            university: "University of Bouira",
+            location: "Algeria"
+        },
+        {
+            name: "Argha Chandra Dhar",
+            department: " Lecturer, Department of Computer Science and Engineering",
+            university: "Khulna University of Engineering and Technology",
+            location: "Bangladesh"
+        },
+        {
+            name: " Mageshwari V",
+            department: "Department of Computer Science",
+            university: "PSGR Krishnammal College for Women",
+            location: "India"
+        },
+    ];
+
+
     return (
         <>
 
@@ -55,72 +254,33 @@ export default function Editorboard() {
 
             <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 mx-auto h-full max-w-[80rem]">
-                    <div>
-                        <div className="bg-white border-3 border-gray-300 rounded-lg h-full">
-                            <div className="bg-[#22367C] h-48 rounded-t z-10"></div>
-                            <div className="flex flex-col gap-3 items-center p-3 -mt-29 z-20">
-                                <div className="border-2 border-[#22367C] p-8 rounded-full bg-white ">
-                                    <img src="/assets/images/editor1.png" alt="User" className='w-30 h-32' />
-                                </div>
-                                <p className="inter-medium text-2xl text-black">A.L.S Saabith</p>
-                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Eastern University Sri Lanka</p>
-                                    {/* <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Expertise :</span> Machine Learning
-                                        </div>
+                    {editors.map((editor, index) => (
+                        <div key={index}>
+                            <div className="bg-white border-2 border-[#22367C] rounded-lg h-full">
+                                {/* <div className="bg-[#22367C] h-48 rounded-t z-10"></div> */}
+                                <div className="flex flex-col gap-5 items-center p-5 z-20">
+                                    {/* -mt-29 */}
+                                    {/* <div className="border-2 border-[#22367C] p-8 rounded-full bg-white">
+                                        <img src="/assets/images/editor1.png" alt="User" className="w-30 h-32" />
                                     </div> */}
-                                    <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> Sri Lanka
+                                    <p className="inter-medium text-2xl text-black">Dr. {editor.name}</p>
+                                    <div className="flex flex-col gap-2">
+                                        {(editor.department &&
+                                            <p className=" text-gray-700 sm:text-base md:text-lg lg:text-[16px]  ">
+                                                <span className="inter-semibold text-md text-gray-900">Department :</span> {editor.department}
+                                            </p>
+                                        )}
+                                        <p className=" text-gray-700 sm:text-base md:text-lg lg:text-[16px]  ">
+                                            <span className="inter-semibold text-md text-gray-900">University :</span> {editor.university}
+                                        </p>
+                                        <div className="text-gray-700 sm:text-base md:text-lg lg:text-[16px]">
+                                            <span className="inter-semibold text-md text-gray-900">Country :</span> {editor.location}
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div className="bg-white border-3 border-gray-300 rounded-lg h-full">
-                            <div className="bg-[#22367C] h-48 rounded-t z-10"></div>
-                            <div className="flex flex-col gap-3 items-center p-3 -mt-29 z-20">
-                                <div className="border-2 border-[#22367C] p-8 rounded-full bg-white ">
-                                    <img src="/assets/images/editor1.png" alt="User" className='w-30 h-32' />
-                                </div>
-                                <p className="inter-medium text-2xl text-black">A.S. Hafiza Binti Abas</p>
-                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">University of Technology Malaysia</p>
-                                    {/* <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Expertise :</span> Machine Learning
-                                        </div>
-                                    </div> */}
-                                    <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> Malaysia
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="bg-white border-3 border-gray-300 rounded-lg h-full">
-                            <div className="bg-[#22367C] h-48 rounded-t z-10"></div>
-                            <div className="flex flex-col gap-3 items-center p-3 -mt-29 z-20">
-                                <div className="border-2 border-[#22367C] p-8 rounded-full bg-white ">
-                                    <img src="/assets/images/editor1.png" alt="User" className='w-30 h-32' />
-                                </div>
-                                <p className="inter-medium text-2xl text-black">Ahmad Ilham</p>
-                                <div className="flex flex-col gap-2"> <p className="inter-semibold text-gray-900 sm:text-base md:text-lg lg:text-[18px] text-justify leading-[30px]">Universitas Muhammadiyah Semarang</p>
-                                    {/* <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Expertise :</span> Machine Learning
-                                        </div>
-                                    </div> */}
-                                    <div className="flex gap-2">
-                                        <div className='text-gray-600'><span className='inter-medium text-md text-gray-900'>Country    :</span> Indonesia
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </>

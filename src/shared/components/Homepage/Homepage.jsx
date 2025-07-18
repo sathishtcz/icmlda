@@ -18,7 +18,6 @@ function Homepage() {
               </h1>
             </div>
 
-
             <div className="flex flex-col gap-4 lg:gap-6">
               <p className="inter-medium text-base sm:text-lg md:text-xl text-gray-200">
                 Powering the Future with Machine Learning & Data Analytics and Unlocking Insights, Fueling Innovation
@@ -142,7 +141,7 @@ function Homepage() {
       </div>
 
 
-      <div className="p-4 lg:mt-18 mt-5 bg-[#EAF6FE]">
+      {/* <div className="p-4 lg:mt-18 mt-5 bg-[#EAF6FE]">
         <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto py-8">
           <h3 className="text-black inter-bold text-lg">OUR FEATURED SPEAKERS</h3>
           <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] mt-3">The International Conference on Machine Learning and Data Analytics proudly presents a distinguished lineup of featured speakers who are shaping the future of AI and data science. These global thought leaders, renowned researchers, and industry innovators will share their expertise through captivating keynotes, technical talks, and interactive panels. Attendees will gain insights into the latest advancements, practical applications, and ethical considerations in machine learning and data analytics, inspiring new ideas and collaborations.</p>
@@ -185,7 +184,7 @@ function Homepage() {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
 
