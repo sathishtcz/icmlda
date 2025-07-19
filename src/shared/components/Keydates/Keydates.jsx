@@ -38,12 +38,12 @@ export default function Keydates() {
           </div>
           <div className="space-y-5 max-w-3xl w-full">
             {[
-              { label: "Abstract Submission Deadline", date: "August 10, 2025" },
-              { label: "Full Paper Submission Deadline", date: "August 10, 2025" },
-              { label: "Notification of Acceptance", date: "September 15, 2025" },
-              { label: "Final Paper Submission", date: "September 30, 2025" },
-              { label: "Registration Deadline", date: "September 15, 2025" },
-              { label: "Conference Dates", date: "October 24–26, 2025" }
+              // { label: "Abstract Submission Deadline", date: "August 10, 2025" },
+              { label: "Full Paper Submission Deadline", date: "31th July, 2025" },
+              { label: "Notification of Acceptance", date: "12th August, 2025" },
+              { label: "Final Paper Submission", date: "21st August, 2025" },
+              // { label: "Registration Deadline", date: "September 15, 2025" },
+              { label: "Conference Dates", date: "3rd September, 2025" }
             ].map((item, index) => (
               <div key={index} className="flex gap-2 items-start">
                 <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0 " />

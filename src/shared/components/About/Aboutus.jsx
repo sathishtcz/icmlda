@@ -77,12 +77,12 @@ function Aboutus() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-40 gap-10 ">
                         <div className="relative ">
                             <div className="flex justify-center"><img src="/assets/images/About3.jpg" alt="about" className="w-full max-w-[630px] h-auto object-cover rounded-xl" /></div>
-                            
+
                             <div className="xl:block hidden absolute bg-white rounded-lg px-5 py-4 shadow-md bottom-1/3 -right-1/9">
                                 <div className="flex flex-col gap-1 items-center text-center">
                                     <IoLocationSharp className='text-4xl text-[#FABF2B]' />
                                     <p className="inter-semibold">Location</p>
-                                    <p className="inter-semibold">Chennai,India</p>
+                                    <p className="inter-semibold">Changi, Singapore</p>
                                 </div>
                             </div>
                         </div>

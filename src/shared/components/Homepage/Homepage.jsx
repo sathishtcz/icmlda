@@ -34,11 +34,11 @@ function Homepage() {
               <div className="flex gap-3 sm:gap-4 lg:gap-5">
                 <div className="flex items-center gap-2 bg-[#FFDB00] text-black px-4 py-2 rounded-md cursor-pointer">
                   <PiCalendarCheckFill className="text-2xl md:text-2xl" />
-                  <p className="text-sm md:text-base lg:text-lg inter-medium">August 28–30, 2025</p>
+                  <p className="text-sm md:text-base lg:text-lg inter-medium">3<sup>rd</sup> September, 2025</p>
                 </div>
                 <div className="flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition duration-300 cursor-pointer">
                   <IoLocationOutline className="text-2xl md:text-2xl" />
-                  <p className="text-sm md:text-base lg:text-lg">Tamil Nadu, Chennai</p>
+                  <p className="text-sm md:text-base lg:text-lg">Changi, Singapore</p>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ function Homepage() {
 
 
 
-{/* Join Us at INCOCSA 2025 */}
+      {/* Join Us at INCOCSA 2025 */}
       <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
         <h4 className="namdhinggo-semibold text-[25px] lg:text-[40px] text-center">ICMLDA 2025: Innovate & Connect</h4>
         <div className="grid grid-cols-1 lg:grid-cols-3  lg:gap-20 gap-10 mt-13 mx-auto">
@@ -209,10 +209,10 @@ function Homepage() {
           <div className="flex flex-col gap-5">
             <div className="bg-[#FFDB00] rounded-md p-2 py-5">
               <div className="flex flex-row items-center gap-2 px-5">
-                <IoLocationSharp  className='text-4xl text-black' />
+                <IoLocationSharp className='text-4xl text-black' />
                 <div className="flex flex-col gap-2">
                   <p className="inter-regular sm:text-base md:text-lg lg:text-[16px] text-gray-700">Location</p>
-                  <p className="inter-semibold sm:text-base md:text-lg lg:text-[16px] text-black">TamilNadu, Chennai</p>
+                  <p className="inter-semibold sm:text-base md:text-lg lg:text-[16px] text-black">Changi, Singapore</p>
                 </div>
               </div>
             </div>
@@ -221,13 +221,13 @@ function Homepage() {
                 <PiCalendarCheckFill className='text-4xl text-black' />
                 <div className="flex flex-col gap-2">
                   <p className="inter-regular sm:text-base md:text-lg lg:text-[16px] text-gray-700">Date</p>
-                  <p className="inter-semibold sm:text-base md:text-lg lg:text-[16px] text-black">28th to 30th August, 2025</p>
+                  <p className="inter-semibold sm:text-base md:text-lg lg:text-[16px] text-black">3<sup>rd</sup> September, 2025</p>
                 </div>
               </div>
             </div>
             <div className="bg-[#FFDB00] p-2 rounded-md py-5">
               <div className="flex flex-row items-center gap-2 px-5">
-                <IoIosAlarm  className='text-4xl text-black' />
+                <IoIosAlarm className='text-4xl text-black' />
                 <div className="flex flex-col gap-2">
                   <p className="inter-regular sm:text-base md:text-lg lg:text-[16px] text-gray-700">Duration</p>
                   <p className="inter-semibold sm:text-base md:text-lg lg:text-[16px] text-black">9:00 AM – 5:00 PM</p>
@@ -238,7 +238,7 @@ function Homepage() {
         </div>
       </div>
 
-      
+
     </>
   )
 }

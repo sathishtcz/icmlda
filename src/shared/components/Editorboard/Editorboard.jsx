@@ -11,12 +11,6 @@ export default function Editorboard() {
             location: "Algeria"
         },
 
-        {
-            name: "Ridwan Mustofa",
-            department: "Assistant Professor",
-            university: "Khulna University of Engineering & Technology",
-            location: "Bangladesh"
-        },
 
         {
             name: "G.Vinodhini",
@@ -26,31 +20,15 @@ export default function Editorboard() {
         },
 
         {
-            name: "Jhanghiz Syahrivar",
-            university: "President University",
-            location: "Indonesia"
-        },
-        {
-            name: "Bibhakar Das",
-            university: "Khulna University of Engineering and Technology",
-            location: "Bangladesh"
-        },
-        {
             name: "Ajanthaa Lakkshmanan",
-            department: "Assistant Professor, Department of Computer Science",
+            department: "Department of Computer Science",
             university: "Sathyabama Institute of Science and Technology",
             location: "India"
         },
 
-
-        {
-            name: "Johan Hendri Prasetyo",
-            university: "Universitas Nusa Mandiri",
-            location: "Indonesia"
-        },
         {
             name: "Tariq Javid",
-            department: "Professor, Department of Biomedical Engineering",
+            department: "Department of Biomedical Engineering",
             university: "Hamdard University",
             location: "Pakistan"
         },
@@ -61,26 +39,19 @@ export default function Editorboard() {
             location: "Indonesia"
         },
         {
-            name: "Twana A. Hamad",
-            university: "Harran University",
-            location: "Turkey"
-        },
-        {
-            name: "Ammar Amjad",
-            university: " National Yang ming chiao tung university",
-            location: "Taiwan"
-        },
-        {
-            name: "Dr. Mujtaba Korai",
+            name: "Mujtaba Korai",
             department: "Department of Computer Engineering",
             university: "Gachon University",
             location: "South Korea"
         },
+
         {
-            name: "Abderrezak Benyahia",
-            university: " Associate Professor",
-            location: "Algeria"
+            name: "Collins N. Udanor",
+            department: "Department of Computer Science",
+            university: "University of Nigeria",
+            location: "Nigeria"
         },
+
         {
             name: "Ziquan Feng",
             department: "Department of Multicultural Pedagogy",
@@ -90,39 +61,41 @@ export default function Editorboard() {
         {
             name: "Kabelo Given Chuma",
             department: "Department of Information Science",
-            university: "College of Human Sciences, University of South Africa",
+            university: "University of South Africa",
             location: "South Africa"
         },
+
         {
             name: "Asad Aziz",
-            department: "Lecturer, Department of Geography",
+            department: "Department of Geography",
             university: "University of Gujrat",
             location: "Pakistan"
         },
 
         {
             name: "Mohammad Javad Fadaeieslam",
-            department: "Assistant professor, Department of Electrical and Computer Engineering",
+            department: "Department of Electrical and Computer Engineering",
             university: "Semnan University",
             location: "Iran"
         },
 
         {
-            name: "Karthika K",
+            name: "K. Karthika",
             department: "Department of Computer Science",
             university: "Sri Sairam College of Engineering",
             location: "India"
         },
+
         {
             name: "Shazia Riaz",
-            department: "Assistant Professor, Department of Computer Science",
+            department: "Department of Computer Science",
             university: "Women University Faisalabad",
             location: "Pakistan"
         },
         {
             name: "Nguyen Van Thieu",
-            department: "Faculty of Computer Science",
-            university: "PHENIKAA University",
+            department: "Department of Computer Science",
+            university: "Phenikaa University",
             location: "Vietnam"
         },
 
@@ -132,16 +105,18 @@ export default function Editorboard() {
             university: "University of Moratuwa",
             location: "Sri Lanka"
         },
-        {
-            name: "Qiang Tong",
-            university: "Shenzhen Institute of Information Technology",
-            location: "China"
-        },
+
         {
             name: "Asma Kausar Mukhtar Ali",
             department: "Department of Information Technology",
             university: " MJIIT University of Technology",
             location: "Malaysia"
+        },
+        {
+            name: "Muhammad Suleman Memon",
+            department: "Department of Information Technology",
+            university: "University of Sindh",
+            location: "Pakistan"
         },
         {
             name: "Bawar Mohammed Faraj",
@@ -151,7 +126,7 @@ export default function Editorboard() {
         },
         {
             name: "Omar Bin Samin",
-            department: "Lecturer,  Center of Excellence in Information Technology",
+            department: "Department of Information Technology",
             university: "Institute of Management Sciences",
             location: "Pakistan"
         },
@@ -171,14 +146,9 @@ export default function Editorboard() {
 
         {
             name: "Ledan Qian",
-            department: "Department of  Information Technology",
+            department: "Department of Information Technology",
             university: "Wenzhou University",
             location: "China"
-        }, {
-            name: "Muhammd Umer Farooq",
-            department: "Assistant Professor, Department of Computer Science and Information Technology",
-            university: "NED University of Engineering and Technology",
-            location: "Pakistan"
         },
         {
             name: "Bilal Saoud",
@@ -188,15 +158,45 @@ export default function Editorboard() {
         },
         {
             name: "Argha Chandra Dhar",
-            department: " Lecturer, Department of Computer Science and Engineering",
+            department: "Department of Computer Science and Engineering",
             university: "Khulna University of Engineering and Technology",
             location: "Bangladesh"
         },
         {
-            name: " Mageshwari V",
+            name: "V. Mageshwari",
             department: "Department of Computer Science",
             university: "PSGR Krishnammal College for Women",
             location: "India"
+        },
+        {
+            name: "M. Sathish kumar",
+            department: "Department of Computer Application",
+            university: " Hindustan Institute of Technology and Science",
+            location: "India"
+        },
+        {
+            name: "Minhaz Uddin Emon",
+            department: " Department of Computer Science",
+            university: "Pattimura University",
+            location: "Indonesia"
+        },
+        {
+            name: "D. Angeline Benitta",
+            department: "Department of Computer Applications",
+            university: "Hindustan Institute of Technology and Science",
+            location: "India"
+        },
+        {
+            name: "Sirajuddin Qureshi",
+            department: "Department of Information Technology",
+            university: "Beijing University of Technology",
+            location: "China"
+        },
+        {
+            name: "Muhammd Umer Farooq",
+            department: "Department of Computer Science and Information Technology",
+            university: "NED University of Engineering and Technology",
+            location: "Pakistan"
         },
     ];
 
@@ -253,30 +253,16 @@ export default function Editorboard() {
             </div>
 
             <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 mx-auto h-full max-w-[80rem]">
+                <div className="grid grid-cols-1 divide-y border border-[#22367C] max-w-[80rem] mx-auto">
                     {editors.map((editor, index) => (
                         <div key={index}>
-                            <div className="bg-white border-2 border-[#22367C] rounded-lg h-full">
-                                {/* <div className="bg-[#22367C] h-48 rounded-t z-10"></div> */}
-                                <div className="flex flex-col gap-5 items-center p-5 z-20">
-                                    {/* -mt-29 */}
-                                    {/* <div className="border-2 border-[#22367C] p-8 rounded-full bg-white">
-                                        <img src="/assets/images/editor1.png" alt="User" className="w-30 h-32" />
-                                    </div> */}
-                                    <p className="inter-medium text-2xl text-black">Dr. {editor.name}</p>
-                                    <div className="flex flex-col gap-2">
-                                        {(editor.department &&
-                                            <p className=" text-gray-700 sm:text-base md:text-lg lg:text-[16px]  ">
-                                                <span className="inter-semibold text-md text-gray-900">Department :</span> {editor.department}
-                                            </p>
-                                        )}
-                                        <p className=" text-gray-700 sm:text-base md:text-lg lg:text-[16px]  ">
-                                            <span className="inter-semibold text-md text-gray-900">University :</span> {editor.university}
-                                        </p>
-                                        <div className="text-gray-700 sm:text-base md:text-lg lg:text-[16px]">
-                                            <span className="inter-semibold text-md text-gray-900">Country :</span> {editor.location}
-                                        </div>
-                                    </div>
+                            <div key={index} className="grid grid-cols-1 md:grid-cols-[30%_70%] md:gap-4    bg-white even:bg-gray-50">
+                                <div className="font-semibold text-black md:border-r-1 p-3">
+                                    Dr. {editor.name}
+                                </div>
+                                <div className="text-gray-700 p-3">
+                                    {editor.department && <>{editor.department}, </>}
+                                    {editor.university}, {editor.location}
                                 </div>
                             </div>
                         </div>

@@ -115,7 +115,7 @@ export default function Contactus() {
                                     <div className="flex flex-col  items-center">
                                         <TfiLocationPin className="text-[#FABF2B] text-5xl flex-shrink-0" />
                                         <p className="text-[16px] text-gray-400 inter-medium mt-2">Location</p>
-                                        <p className="text-white text-2xl inter-medium">TamilNadu, Chennai</p>
+                                        <p className="text-white text-2xl inter-medium">Changi, Singapore</p>
                                     </div>
                                     <div className="flex justify-center">
                                         <img src="/assets/images/contact.png" alt="contact" className="w-45 h-45" />
@@ -124,7 +124,7 @@ export default function Contactus() {
                             </div>
                         </div>
                         <div className="lg:col-span-8 w-full h-full">
-                             
+
                                 <div className="bg-white p-6 sm:p-10 lg:p-12 rounded-lg shadow-md h-full">
                                     <p className="text-[#FABF2B] inter-semibold mb-2 text-lg">Contact us</p>
                                     <h2 className="inter-semibold text-[25px] lg:text-[40px] text-black mb-8">Get in touch with us</h2>
@@ -186,7 +186,7 @@ export default function Contactus() {
                                         </button>
                                     </form>
                                 </div>
-                            
+
                         </div>
                     </div>
                 </div>

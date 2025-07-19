@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1  md:grid-cols-4 sm:grid-cols-2 md:gap-8 gap-4">
           <div className='text-center md:text-left flex flex-col justify-start items-start'>
             <Link to='/'>
-           
+
               <img className='w-40 md:mx-0   mx-auto' src="/assets/images/Logo.png" alt="logo" />
             </Link>
             {/* <Link to="/" className="text-white text-4xl inter-bold">
@@ -56,9 +56,9 @@ const Footer = () => {
               <div className=''>
                 <h4 className="lg:text-xl text-lg font-bold mb-2 ">Contact Info</h4>
                 <ul className="lg:text-base ">
-                  <li><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><IoLocationSharp className='text-lg'/>Chennai, Tamil Nadu</Link></a></li>
-                  <li className='wrap-anywhere xl:wrap-normal'><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><IoIosMail className="text-lg"/>info.icmlda@gmail.com</Link></a></li>
-                  <li><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><BiSolidPhoneCall   className='text-lg'/>+91 0101010101</Link></a></li>
+                  <li><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><IoLocationSharp className='text-lg' />Changi, Singapore</Link></a></li>
+                  <li className='wrap-anywhere xl:wrap-normal'><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><IoIosMail className="text-lg" />info.icmlda@gmail.com</Link></a></li>
+                  {/* <li><a className="hover:underline"><Link to='' className='flex gap-2 items-center'><BiSolidPhoneCall   className='text-lg'/>+91 0101010101</Link></a></li> */}
                 </ul>
               </div>
             </div>
