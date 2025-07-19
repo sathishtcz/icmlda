@@ -73,8 +73,8 @@ const Header = () => {
     const Aboutus = [
         { name: "About the Conference", path: "/about" },
         { name: "Scope of Conference", path: "/scope" },
-        { name: "Organizing Committee", path: "/organizing-committee" },
-        { name: "Editorial Board", path: "/editorial-board" },
+        { name: "Organizing Committee ", path: "/organizing-committee#organize" },
+        { name: "Editorial Board", path: "#editorial-board" },
     ];
 
     const AuthorDesk = [
@@ -100,6 +100,17 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const handleMenuClick = (path) => {
+        if (path.startsWith("#")) {
+            const id = path.substring(1); // removes #
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+            }
+        } else {
+            navigate(path); // using react-router-dom's useNavigate()
+        }
+    };
 
 
     return (
@@ -123,17 +134,55 @@ const Header = () => {
                             <Link onClick={() => toggleDropdown(1)} className={`flex items-center gap-1 `}>
                                 About Us <FaChevronDown className={`${dropdown1 ? 'rotate-180' : 'rotate-0'} duration-200 text-xs`} />
                             </Link>
-                            {dropdown1 && (
+                            {/* {dropdown1 && (
                                 <div className="absolute bg-white border border-gray-600 shadow-lg mt-2 rounded ">
                                     <ul className="p-2 text-lg max-w-none w-full whitespace-nowrap">
                                         {Aboutus.map((link, index) => (
                                             <Link key={index} onClick={() => setDropdown1(false)} to={link.path} className="!w-full">
-                                                <li className="px-4 py-2 text-gray-900 namdhinggo-bold">{link.name}</li>
+                                                <li    onClick={() => handleMenuClick(item.path)} className="px-4 py-2 text-gray-900 namdhinggo-bold">{link.name}</li>
                                             </Link>
                                         ))}
                                     </ul>
                                 </div>
+                            )} */}
+                            {dropdown1 && (
+                                <div className="absolute bg-white border border-gray-600 shadow-lg mt-2 rounded">
+                                    <ul className="p-2 text-lg max-w-none w-full whitespace-nowrap">
+                                        {Aboutus.map((link, index) =>
+                                            link.path.startsWith("#") ? (
+                                                <button
+                                                    key={index}
+                                                    onClick={() => {
+                                                        setDropdown1(false);
+                                                        const id = link.path.substring(1);
+                                                        const el = document.getElementById(id);
+                                                        if (el) {
+                                                            el.scrollIntoView({ behavior: "smooth" });
+                                                        }
+                                                    }}
+                                                    className="!w-full text-left"
+                                                >
+                                                    <li className="px-4 py-2 text-gray-900 namdhinggo-bold">
+                                                        {link.name}
+                                                    </li>
+                                                </button>
+                                            ) : (
+                                                <Link
+                                                    key={index}
+                                                    to={link.path}
+                                                    onClick={() => setDropdown1(false)}
+                                                    className="!w-full"
+                                                >
+                                                    <li className="px-4 py-2 text-gray-900 namdhinggo-bold">
+                                                        {link.name}
+                                                    </li>
+                                                </Link>
+                                            )
+                                        )}
+                                    </ul>
+                                </div>
                             )}
+
                         </li>
                         <li ref={dropdown2Ref} className="cursor-pointer relative">
                             <Link onClick={() => toggleDropdown(2)} className="flex items-center gap-1">

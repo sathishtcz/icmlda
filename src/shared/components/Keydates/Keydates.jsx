@@ -37,28 +37,44 @@ export default function Keydates() {
             <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Mark your calendar early, prepare your research in advance, and take advantage of early-bird opportunities to ensure a smooth and rewarding conference experience. We encourage all contributors to meet these deadlines to benefit from timely reviews, early confirmations, and maximum visibility within the conference program. Don't miss your chance to be part of this leading international event in the fields of machine learning and data analytics!</p>
           </div>
           <div className="space-y-5 max-w-3xl w-full">
-            {[
-              // { label: "Abstract Submission Deadline", date: "August 10, 2025" },
-              { label: "Full Paper Submission Deadline", date: "31th July, 2025" },
-              { label: "Notification of Acceptance", date: "12th August, 2025" },
-              { label: "Final Paper Submission", date: "21st August, 2025" },
-              // { label: "Registration Deadline", date: "September 15, 2025" },
-              { label: "Conference Dates", date: "3rd September, 2025" }
-            ].map((item, index) => (
-              <div key={index} className="flex gap-2 items-start">
-                <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0 " />
-                <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
-                  <span className="inter-medium text-black whitespace-nowrap">{item.label}</span>
-                  <span>: {item.date}</span>
-                </div>
+            <div className="flex gap-2 items-start">
+              <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
+              <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
+                <span className="inter-medium text-black whitespace-nowrap">Full Paper Submission Deadline</span>
+                <span>: 31 <sup>st</sup> July, 2025</span>
               </div>
-            ))}
+            </div>
+
+            <div className="flex gap-2 items-start">
+              <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
+              <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
+                <span className="inter-medium text-black whitespace-nowrap">Notification of Acceptance</span>
+                <span>: 12 <sup>th</sup> August, 2025</span>
+              </div>
+            </div>
+
+            <div className="flex gap-2 items-start">
+              <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
+              <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
+                <span className="inter-medium text-black whitespace-nowrap">Final Paper Submission</span>
+                <span>: 21 <sup>st</sup> August, 2025</span>
+              </div>
+            </div>
+
+            <div className="flex gap-2 items-start">
+              <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
+              <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
+                <span className="inter-medium text-black whitespace-nowrap">Conference Dates</span>
+                <span>: 3 <sup>rd</sup> September, 2025</span>
+              </div>
+            </div>
+
           </div>
 
 
         </div>
       </div>
-
+{/*
       <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
         <div className="space-y-6">
           <div className="flex flex-col gap-3 ">
@@ -67,7 +83,7 @@ export default function Keydates() {
           </div>
           <div className="space-y-4">
             <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Join a global network of innovators, researchers, professionals, and thought leaders at the International Conference on Machine Learning and Data Analytics (ICMLDA 2025). Register today to ensure your participation in one of the most anticipated conferences in the field of intelligent data technologies and applied AI. Whether you're presenting a paper, attending to gain insights, or exploring collaborative opportunities, your registration gives you full access to a dynamic and enriching experience. Early registration is highly encouraged to take advantage of discounted rates and to secure your place before seats fill up.</p>
-            {/* <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Mark your calendar early, prepare your research in advance, and take advantage of early-bird opportunities to ensure a smooth and rewarding conference experience. We encourage all contributors to meet these deadlines to benefit from timely reviews, early confirmations, and maximum visibility within the conference program. Don't miss your chance to be part of this leading international event in the fields of machine learning and data analytics!</p> */}
+            <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">Mark your calendar early, prepare your research in advance, and take advantage of early-bird opportunities to ensure a smooth and rewarding conference experience. We encourage all contributors to meet these deadlines to benefit from timely reviews, early confirmations, and maximum visibility within the conference program. Don't miss your chance to be part of this leading international event in the fields of machine learning and data analytics!</p>
           </div>
           <div className="space-y-5 max-w-3xl w-full">
             {[
@@ -88,7 +104,7 @@ export default function Keydates() {
           </div>
 
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

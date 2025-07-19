@@ -103,11 +103,6 @@ export default function Contactus() {
                             <div className="bg-[#22367C] rounded-lg p-6 h-full">
                                 <div className="flex flex-col gap-4 text-center">
                                     <div className="flex flex-col  items-center">
-                                        <LiaPhoneVolumeSolid className="text-[#FABF2B] text-5xl flex-shrink-0" />
-                                        <p className="text-[16px] text-gray-400 inter-medium mt-2">Call Support Center 24/7</p>
-                                        <p className="text-white text-2xl inter-medium">+91 9745551212</p>
-                                    </div>
-                                    <div className="flex flex-col  items-center">
                                         <TfiEmail className="text-[#FABF2B] text-4xl flex-shrink-0" />
                                         <p className="text-[16px] text-gray-400 inter-medium mt-2">Write To Us</p>
                                         <p className="text-white text-2xl inter-medium text-wrap break-all">info.icmlda@gmail.com</p>
@@ -125,67 +120,67 @@ export default function Contactus() {
                         </div>
                         <div className="lg:col-span-8 w-full h-full">
 
-                                <div className="bg-white p-6 sm:p-10 lg:p-12 rounded-lg shadow-md h-full">
-                                    <p className="text-[#FABF2B] inter-semibold mb-2 text-lg">Contact us</p>
-                                    <h2 className="inter-semibold text-[25px] lg:text-[40px] text-black mb-8">Get in touch with us</h2>
-                                    <form onSubmit={handleSubmit} className="space-y-9">
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                                            <input
-                                                type="text"
-                                                name="Firstname"
+                            <div className="bg-white p-6 sm:p-10 lg:p-12 rounded-lg shadow-md h-full">
+                                <p className="text-[#FABF2B] inter-semibold mb-2 text-lg">Contact us</p>
+                                <h2 className="inter-semibold text-[25px] lg:text-[40px] text-black mb-8">Get in touch with us</h2>
+                                <form onSubmit={handleSubmit} className="space-y-9">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                                        <input
+                                            type="text"
+                                            name="Firstname"
                                             onChange={handleChange}
                                             value={formData.Firstname}
                                             required
-                                                placeholder="Enter Your First Name"
-                                                className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
-                                            />
-                                            <input
-                                                type="text"
-                                                name="Lastname"
+                                            placeholder="Enter Your First Name"
+                                            className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
+                                        />
+                                        <input
+                                            type="text"
+                                            name="Lastname"
                                             onChange={handleChange}
                                             value={formData.Lastname}
                                             required
-                                                placeholder="Enter Your Last Name"
-                                                className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
-                                            />
-                                            <input
-                                                type="email"
-                                                  required
+                                            placeholder="Enter Your Last Name"
+                                            className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
+                                        />
+                                        <input
+                                            type="email"
+                                            required
                                             name="Email_Address"
                                             onChange={handleChange}
                                             value={formData.Email_Address}
-                                                placeholder="Enter Your Mail"
-                                                className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
-                                            />
-                                            <input
-                                                type="text"
-                                                 required
+                                            placeholder="Enter Your Mail"
+                                            className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
+                                        />
+                                        <input
+                                            type="text"
+                                            required
                                             name="Mobile_Number"
                                             onChange={handleChange}
                                             value={formData.Mobile_Number}
-                                                placeholder="Enter Your Phone Number"
-                                                className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
-                                            />
-                                        </div>
+                                            placeholder="Enter Your Phone Number"
+                                            className="border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
+                                        />
+                                    </div>
 
-                                        <textarea
-                                            rows="4"
-                                            required
-                                            name="Message"
-                                            onChange={handleChange}
-                                            value={formData.Message}
-                                            placeholder="Enter Your Message"
-                                            className="w-full border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
-                                        ></textarea>
+                                    <textarea
+                                        rows="4"
+                                        required
+                                        name="Message"
+                                        onChange={handleChange}
+                                        value={formData.Message}
+                                        placeholder="Enter Your Message"
+                                        className="w-full border-b border-gray-300 focus:outline-none py-2 placeholder-gray-400"
+                                    ></textarea>
 
-                                        <button
-                                            type="submit" disabled={status === 'Sending...'}
-                                            className="bg-[#FABF2B] text-black px-6 py-2 rounded-md font-medium hover:bg-[#FABF2B] transition cursor-pointer"
-                                        >
-                                            {status === 'Sending...' ? 'Sending...' : 'Send Message'}
-                                        </button>
-                                    </form>
-                                </div>
+                                    <button
+                                        type="submit" disabled={status === 'Sending...'}
+                                        className="bg-[#FABF2B] text-black px-6 py-2 rounded-md font-medium hover:bg-[#FABF2B] transition cursor-pointer"
+                                    >
+                                        {status === 'Sending...' ? 'Sending...' : 'Send Message'}
+                                    </button>
+                                </form>
+                            </div>
 
                         </div>
                     </div>
