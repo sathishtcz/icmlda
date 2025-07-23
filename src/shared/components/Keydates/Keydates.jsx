@@ -41,7 +41,7 @@ export default function Keydates() {
               <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
               <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
                 <span className="inter-medium text-black whitespace-nowrap">Full Paper Submission Deadline</span>
-                <span>: 31 <sup>st</sup> July, 2025</span>
+                <span>: 31<sup>st</sup> July, 2025</span>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ export default function Keydates() {
               <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
               <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
                 <span className="inter-medium text-black whitespace-nowrap">Notification of Acceptance</span>
-                <span>: 12 <sup>th</sup> August, 2025</span>
+                <span>: 12<sup>th</sup> August, 2025</span>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ export default function Keydates() {
               <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
               <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
                 <span className="inter-medium text-black whitespace-nowrap">Final Paper Submission</span>
-                <span>: 21 <sup>st</sup> August, 2025</span>
+                <span>: 21<sup>st</sup> August, 2025</span>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ export default function Keydates() {
               <IoIosCheckmarkCircle className="text-[#22367C] text-3xl flex-shrink-0" />
               <div className="grid grid-cols-1 sm:grid-cols-[280px_1fr] inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] leading-[30px] w-full">
                 <span className="inter-medium text-black whitespace-nowrap">Conference Dates</span>
-                <span>: 3 <sup>rd</sup> September, 2025</span>
+                <span>: 3<sup>rd</sup> September, 2025</span>
               </div>
             </div>
 

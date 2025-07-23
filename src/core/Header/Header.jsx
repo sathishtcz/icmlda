@@ -73,8 +73,8 @@ const Header = () => {
     const Aboutus = [
         { name: "About the Conference", path: "/about" },
         { name: "Scope of Conference", path: "/scope" },
-        { name: "Organizing Committee ", path: "/organizing-committee#organize" },
-        { name: "Editorial Board", path: "#editorial-board" },
+        { name: "Organizing Committee & Editorial Board", path: "/organizing-committee#organize" },
+        // { name: "Editorial Board", path: "#editorial-board" },
     ];
 
     const AuthorDesk = [
@@ -160,7 +160,7 @@ const Header = () => {
                                                             el.scrollIntoView({ behavior: "smooth" });
                                                         }
                                                     }}
-                                                    className="!w-full text-left"
+                                                    className="text-left"
                                                 >
                                                     <li className="px-4 py-2 text-gray-900 namdhinggo-bold">
                                                         {link.name}

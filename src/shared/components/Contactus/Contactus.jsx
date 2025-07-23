@@ -38,7 +38,7 @@ export default function Contactus() {
             //     formDataToSend.append('Paper_File', formData.Paper_File);
             // }
 
-            const response = await fetch('http://192.168.29.11/ICMLDA/Icmlda/contact.php', {
+            const response = await fetch('https://icmlda.com/api/contact.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
