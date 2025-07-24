@@ -111,7 +111,7 @@ export default function Contactus() {
                                         <TfiLocationPin className="text-[#FABF2B] text-5xl flex-shrink-0" />
                                         <p className="text-[16px] text-gray-400 inter-medium mt-2">Location</p>
                                         <p className="text-white text-2xl inter-medium">Changi, Singapore</p>
-                                    </div>
+                                    </div> 
                                     <div className="flex justify-center">
                                         <img src="/assets/images/contact.png" alt="contact" className="w-45 h-45" />
                                     </div>
