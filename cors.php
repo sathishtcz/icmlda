@@ -1,8 +1,10 @@
 <?php
 
+
 $allowed_origins = [
-    "https://icmlda.com",
-    "https://www.icmlda.com"
+    "http://192.168.29.85",
+    "https://icmlda.com"
+    // "https://icngths.com"
 ];
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
@@ -10,4 +12,3 @@ if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed
     header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS");
     header("Access-Control-Allow-Headers: Content-Type, Authorization");
 }
-?>

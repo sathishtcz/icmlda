@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FiUploadCloud } from "react-icons/fi";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function PaperSub() {
-
+    const fileInputRef = useRef(null);
     const [fileName, setFileName] = useState('Click to Upload Paper');
 
     // const handleFileChange = (e) => {
@@ -50,31 +50,60 @@ export default function PaperSub() {
         }
     };
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
-
+        const journalName = 'icmlda';
+        // Generate unique ID: journalName + YYYYMMDD + HHMMSS
+        const now = new Date();
+        const dateStr = now.toISOString().slice(0, 10).replace(/-/g, ''); // YYYYMMDD
+        const timeStr = now.toTimeString().slice(0, 8).replace(/:/g, ''); // HHMMSS
+        const uniqueId = `${journalName}_${dateStr}_${timeStr}`;
         try {
             const formDataToSend = new FormData();
+            formDataToSend.append('Submission_ID', uniqueId);
             formDataToSend.append('Paper_Title', formData.Paper_Title);
             formDataToSend.append('Author_FUll_Name', formData.Author_FUll_Name);
             formDataToSend.append('Email_Address', formData.Email_Address);
             formDataToSend.append('Institution_Name', formData.Institution_Name);
             formDataToSend.append('Paper_Track', formData.Paper_Track);
-
             if (formData.Paper_File) {
                 formDataToSend.append('Paper_File', formData.Paper_File);
             }
 
-            const response = await fetch('https://icmlda.com/api/mail.php', {
+            const googleSheetsParams = new URLSearchParams();
+            googleSheetsParams.append('Submission_ID', uniqueId);
+            googleSheetsParams.append('journal_name', journalName);
+            googleSheetsParams.append('Paper_Title', formData.Paper_Title);
+            googleSheetsParams.append('Author_FUll_Name', formData.Author_FUll_Name);
+            googleSheetsParams.append('Email_Address', formData.Email_Address);
+            googleSheetsParams.append('Institution_Name', formData.Institution_Name);
+            googleSheetsParams.append('Paper_Track', formData.Paper_Track);
+
+            const mailPromise = fetch('https://icmlda.com/api/mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
 
-            if (response.ok) {
-                const result = await response.text();
-                setStatus(result);
+            const sheetsPromise = fetch('https://script.google.com/macros/s/AKfycbwZ_TtKUqAfcue9TNCKy57hTrCKDUP5dTQnWbpSxBDzlRMllEuOoaxzRDl0kQPah5pZ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: googleSheetsParams.toString(),
+            });
+
+            const [mailResponse, sheetsResponse] = await Promise.allSettled([mailPromise, sheetsPromise]);
+            const mailSuccess = mailResponse.status === 'fulfilled' && mailResponse.value.ok;
+            const sheetsSuccess = sheetsResponse.status === 'fulfilled';
+            if (sheetsResponse.status === 'rejected') {
+                console.error('Sheets request failed:', sheetsResponse.reason);
+            }
+
+            if (mailSuccess && sheetsSuccess) {
+                setStatus(`Submission successful! Data sent to both email and Google Sheets (${journalName}). Submission ID: ${uniqueId}`);
+
                 setFormData({
                     Paper_Title: '',
                     Author_FUll_Name: '',
@@ -83,18 +112,33 @@ export default function PaperSub() {
                     Paper_Track: '',
                     Paper_File: null,
                 });
-                // document.getElementById('Paper_File').value = '';
-                toast.success("Paper submitted successfully!");
+                const fileInput = document.getElementById('Paper_File');
+                if (fileInputRef.current) {
+                    fileInputRef.current.value = '';
+                } else {
+                    console.error('Element with ID "Paper_File" not found.');
+                }
+                toast.success(`Paper submitted successfully!`);
+
+            } else if (mailSuccess && !sheetsSuccess) {
+                setStatus('Email sent successfully, but there might be an issue with Google Sheets.');
+                toast.warning('Email sent successfully. Please check if data was saved to Google Sheets.');
+
+            } else if (!mailSuccess && sheetsSuccess) {
+                setStatus('Data likely saved to Google Sheets, but failed to send email.');
+                toast.warning('Data might be saved to Google Sheets, but failed to send email.');
+
             } else {
-                setStatus('Failed to send submission. Please try again.');
-                toast.error('Failed to send submission. Please try again.');
+                setStatus('There might be issues with the submission. Please check manually.');
+                toast.error('Submission completed, but please verify the results manually.');
             }
+
         } catch (error) {
             console.error('Error:', error);
-            setStatus('An error occurred. Please try again.');
+            setStatus('An error occurred during submission. Please try again.');
             toast.error('An error occurred. Please try again.');
         }
-    };
+    }
 
     return (
         <>
@@ -237,12 +281,25 @@ export default function PaperSub() {
                                 <select name='Paper_Track' value={formData.Paper_Track} onChange={handleFileInputChange}
                                     required className="w-full border border-gray-600 focus:outline-none  rounded-xl px-3 py-4 text-gray-500">
                                     <option>Select Your Category</option>
-                                    <option>AI</option>
+                                    <option>Artificial Intelligence</option>
                                     <option>Machine Learning</option>
+                                    <option>Deep Learning</option>
                                     <option>Data Science</option>
+                                    <option>Big Data Analytics</option>
+                                    <option>Computer Vision</option>
+                                    <option>Natural Language Processing</option>
+                                    <option>Reinforcement Learning</option>
+                                    <option>Predictive Modeling</option>
+                                    <option>AI in Healthcare</option>
+                                    <option>Neural Networks</option>
+                                    <option>Speech and Audio Processing</option>
+                                    <option>Data Mining</option>
+                                    <option>Robotics and Automation</option>
+                                    <option>AI Ethics and Fairness</option>
                                 </select>
                                 <div className="relative w-full border-2 border-dashed border-gray-600 rounded-xl py-10 flex flex-col items-center justify-center text-center text-gray-500 overflow-hidden cursor-pointer">
                                     <input
+                                        ref={fileInputRef}
                                         name='Paper_File'
                                         // onChange={handleChange}
                                         accept=".pdf,.doc,.docx"
