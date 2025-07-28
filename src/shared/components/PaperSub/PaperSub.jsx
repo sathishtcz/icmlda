@@ -236,7 +236,6 @@ export default function PaperSub() {
                         </div>
                     </div>
                     <div className=" w-full h-full">
-
                         <div className="bg-[#EAF6FE] p-6 sm:p-10 lg:p-12  shadow-md h-full rounded-br-lg rounded-tr-lg">
                             <h2 className="text-lg font-semibold mb-8 text-center">Submit Your Paper</h2>
                             <form onSubmit={handleSubmit} className="space-y-10">
@@ -247,7 +246,7 @@ export default function PaperSub() {
                                     onChange={handleFileInputChange}
                                     required
                                     placeholder="Enter Your Paper Title"
-                                    className="w-full border border-gray-600 focus:outline-none  rounded-xl px-3 py-4"
+                                    className="w-full border border-gray-600 focus:outline-none rounded-xl px-3 py-4"
                                 />
                                 <input
                                     type="text"
@@ -256,7 +255,7 @@ export default function PaperSub() {
                                     onChange={handleFileInputChange}
                                     required
                                     placeholder="Enter Your Institution Name"
-                                    className="w-full border border-gray-600 focus:outline-none  rounded-xl px-3 py-4"
+                                    className="w-full border border-gray-600 focus:outline-none rounded-xl px-3 py-4"
                                 />
                                 <div className="flex flex-col xl:flex-row gap-4">
                                     <input
@@ -266,7 +265,7 @@ export default function PaperSub() {
                                         onChange={handleFileInputChange}
                                         required
                                         placeholder="Enter Author’s Full Name"
-                                        className="flex-1 border border-gray-600 focus:outline-none  rounded-xl px-3 py-4"
+                                        className="flex-1 border border-gray-600 focus:outline-none rounded-xl px-3 py-4"
                                     />
                                     <input
                                         type="email"
