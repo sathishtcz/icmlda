@@ -8,7 +8,7 @@ function Homepage() {
   return (
     <>
       <div className="bg-[url('/assets/images/Hero.jpg')] bg-cover  bg-right lg:h-screen flex items-center">
-        <div className="w-full xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4  mt-25">
+        <div className="w-full xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4  mt-25 lg:mt-20">
           <div className="flex flex-col gap-4 lg:gap-6 justify-start">
 
             <div className="flex flex-col gap-3 lg:gap-6">
@@ -48,7 +48,7 @@ function Homepage() {
 
 
       {/* About the Conference */}
-      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5">
+      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-20 gap-10">
           <div>
             <div className="flex flex-col gap-3 ">
@@ -96,7 +96,7 @@ function Homepage() {
 
 
       {/* Our mission */}
-      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5">
+      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-20 gap-10">
           <div className=" lg:block hidden ">
             <div className="flex justify-center">
@@ -141,7 +141,7 @@ function Homepage() {
       </div>
 
 
-      {/* <div className="p-4 lg:mt-18 mt-5 bg-[#EAF6FE]">
+      {/* <div className="p-4 lg:mt-10 mt-5 bg-[#EAF6FE]">
         <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto py-8">
           <h3 className="text-black inter-bold text-lg">OUR FEATURED SPEAKERS</h3>
           <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] mt-3">The International Conference on Machine Learning and Data Analytics proudly presents a distinguished lineup of featured speakers who are shaping the future of AI and data science. These global thought leaders, renowned researchers, and industry innovators will share their expertise through captivating keynotes, technical talks, and interactive panels. Attendees will gain insights into the latest advancements, practical applications, and ethical considerations in machine learning and data analytics, inspiring new ideas and collaborations.</p>
@@ -191,7 +191,7 @@ function Homepage() {
       {/* Join Us at INCOCSA 2025 */}
       <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
         <h4 className="namdhinggo-semibold text-[25px] lg:text-[40px] text-center">ICMLDA 2025: Innovate & Connect</h4>
-        <div className="grid grid-cols-1 lg:grid-cols-3  lg:gap-20 gap-10 mt-13 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3  lg:gap-20 gap-10 lg:mt-8 mt-4 mx-auto">
           <div className="col-span-2">
             <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px]">Immerse yourself in the forefront of innovation at the International Conference on Machine Learning and Data Analytics (ICMLDA) 2025, where the brightest minds in AI and data science converge to shape the future. Experience transformative research presentations that unveil the latest breakthroughs in machine learning algorithms, data analytics techniques, and their real-world applications across industries like healthcare, finance, and sustainability.</p>
             <div className="flex flex-col gap-5 mt-7">
@@ -206,7 +206,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 justify-center">
             <div className="bg-[#FFDB00] rounded-md p-2 py-5">
               <div className="flex flex-row items-center gap-2 px-5">
                 <IoLocationSharp className='text-4xl text-black' />

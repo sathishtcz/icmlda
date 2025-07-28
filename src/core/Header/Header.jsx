@@ -114,9 +114,9 @@ const Header = () => {
 
 
     return (
-        <div ref={menuRef} className={`w-full fixed top-0 z-20  transition-all duration-300 ${scrolled ? "bg-white shadow-xl top-0" : "bg-fixed top-3"}`}>
+        <div ref={menuRef} className={`w-full fixed top-0 z-20  transition-all duration-300 px-4 py-3 ${scrolled ? "bg-white shadow-xl top-0" : "bg-fixed top-3"}`}>
             <div className="mx-auto w-full xl:max-w-[1450px] md:max-w-[920px] flex items-center justify-between">
-                <div className="p-5">
+                <div className="">
                     {/* <Link to="/" className="text-4xl namdhinggo-bold ">
                         ICASTAI
                     </Link> */}

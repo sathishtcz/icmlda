@@ -26,7 +26,7 @@ export default function Keydates() {
         </div>
       </div>
 
-      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5">
+      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
         <div className="space-y-6">
           <div className="flex flex-col gap-3 ">
             <h2 className="text-[#FABF2B] inter-semibold">KEY DATES</h2>

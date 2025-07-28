@@ -122,12 +122,12 @@ export default function PaperSub() {
                 </div>
             </div>
 
-            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5 space-y-15">
+            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5 space-y-15">
                 <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px]">The International Conference on Machine Learning and Data Analytics invites researchers, academicians, industry professionals, and students to submit original, unpublished research papers that demonstrate significant contributions to the fields of machine learning, artificial intelligence, data science, and intelligent systems. We welcome high-quality submissions that advance the state of the art in theory, methodology, and applications. Selected papers will be peer-reviewed by our expert panel and included in the official conference proceedings.</p>
             </div>
 
 
-            <div className="xl:max-w-[1400px]  md:max-w-[920px] mx-auto lg:mt-18 mt-5 p-4">
+            <div className="xl:max-w-[1400px]  md:max-w-[920px] mx-auto lg:mt-5 mt-5 p-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2  lg:h-full lg:items-stretch">
                     <div className=" w-full h-full">
                         <div className="bg-[#22367C]  p-6 h-full rounded-tl-lg rounded-bl-lg">

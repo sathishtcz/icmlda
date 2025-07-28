@@ -25,7 +25,7 @@ export default function ConferenceTracks() {
                 </div>
             </div>
 
-            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5 space-y-15">
+            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5 space-y-15">
                 <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px]">The <span className="inter-semibold text-gray-900">International Conference on Machine Learning and Data Analytics</span>  features a diverse and comprehensive set of conference tracks, carefully curated to spotlight the latest advancements, real-world applications, and cutting-edge research in the rapidly evolving fields of machine learning, artificial intelligence, and data science. These tracks provide a focused environment for academics, researchers, industry professionals, and students to engage with specialized topics — from foundational machine learning algorithms to next-generation AI applications in healthcare, finance, education, cybersecurity, and beyond.</p>
 
                 <div className="space-y-8">

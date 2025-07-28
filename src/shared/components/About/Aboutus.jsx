@@ -28,7 +28,7 @@ function Aboutus() {
             </div>
 
 
-            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5">
+            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
                 <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-20 gap-10">
                     <div>
                         <div className="flex flex-col gap-3 ">
@@ -72,7 +72,7 @@ function Aboutus() {
                 </div>
             </div>
 
-            <div className="bg-[#EAF6FE] px-4 py-10 lg:mt-18 mt-5">
+            <div className="bg-[#EAF6FE] px-4 py-10 lg:mt-10 mt-5">
                 <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center lg:gap-40 gap-10 ">
                         <div className="relative ">

@@ -90,13 +90,13 @@ export default function Contactus() {
             </div>
 
 
-            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-18 mt-5 space-y-15">
+            <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5 space-y-15">
                 <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px]">We’d love to hear from you! Whether you're a researcher seeking clarity on abstract submissions, an attendee looking for registration support, an organization interested in sponsorship or partnership opportunities, or simply curious about the event details — our dedicated team is here to assist you every step of the way. At ICMLDA, we value every inquiry and strive to provide timely, helpful responses to ensure your experience with the International Conference on Machine Learning and Data Analytics is smooth, informative, and rewarding. Don’t hesitate to reach out — we’re here to make your participation meaningful and hassle-free.</p>
             </div>
 
             {/* contact form */}
 
-            <div className="bg-[#EAF6FE] px-4 py-10 lg:mt-18 mt-5">
+            <div className="bg-[#EAF6FE] px-4 py-10 lg:mt-10 mt-5">
                 <div className="xl:max-w-[1400px]  md:max-w-[920px] mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:h-full lg:items-stretch">
                         <div className="lg:col-span-4 w-full h-full">
