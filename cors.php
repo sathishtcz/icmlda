@@ -2,9 +2,8 @@
 
 
 $allowed_origins = [
-    "http://192.168.29.85",
-    "https://icmlda.com"
-    // "https://icngths.com"
+    "https://icmlda.com",
+    "https://www.icmlda.com"
 ];
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
