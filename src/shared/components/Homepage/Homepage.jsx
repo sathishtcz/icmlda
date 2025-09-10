@@ -186,6 +186,34 @@ function Homepage() {
 
       </div> */}
 
+      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
+        <h4 className="namdhinggo-semibold text-[25px] lg:text-[40px] text-center">Indexed Journals</h4>
+        <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px]  leading-[30px] mt-2 max-w-5xl mx-auto text-center">The Selective accepted papers of our International Conference on Advanced Smart Technologies and AI Innovations will be recommended to publish in the following index & publisher Journals.</p>
+        <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto mt-12">
+          {[
+            "/assets/images/associates/12.jpg",
+            "/assets/images/associates/2.jpg",
+            "/assets/images/associates/3.jpg",
+            "/assets/images/associates/4.jpg",
+            "/assets/images/associates/5.jpg",
+            "/assets/images/associates/6.jpg",
+            "/assets/images/associates/scopus.png",
+            "/assets/images/associates/8.jpg",
+            "/assets/images/associates/9.jpg",
+            "/assets/images/associates/10.jpg",
+            "/assets/images/associates/11.jpg",
+          ].map((src, i) => (
+            <div
+              key={i}
+              className="w-52 h-52 rounded-full bg-white border  border-gray-200 shadow-[0_0_10px_rgba(0,0,0,0.09)] flex items-center justify-center hover:scale-110 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3"
+            >
+              <img src={src} alt={`logo-${i}`} className="max-h-16 object-contain" />
+            </div>
+          ))}
+        </div>
+
+      </div>
+
 
 
       {/* Join Us at INCOCSA 2025 */}

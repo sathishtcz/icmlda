@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 
 export default function Organizingcommittee() {
   const editors = [
-    {
+        {
       name: "Sidaoui Boutkhil",
       department: "Department of Computer Science",
       university: "Salhi Ahmed University of Naama",
       location: "Algeria"
+    },
+
+    {
+      name: "Leo John Baptist",
+      department: "Department of Information Technology",
+      university: "Botho University",
+      location: "Botswana"
     },
 
 
@@ -17,12 +24,12 @@ export default function Organizingcommittee() {
       location: "India"
     },
 
-    {
-      name: "Ajanthaa Lakkshmanan",
-      department: "Department of Computer Science",
-      university: "Sathyabama Institute of Science and Technology",
-      location: "India"
-    },
+    // {
+    //   name: "Ajanthaa Lakkshmanan",
+    //   department: "Department of Computer Science",
+    //   university: "Sathyabama Institute of Science and Technology",
+    //   location: "India"
+    // },
 
     {
       name: "Tariq Javid",
@@ -50,12 +57,7 @@ export default function Organizingcommittee() {
       location: "Nigeria"
     },
 
-    {
-      name: "Ziquan Feng",
-      department: "Department of Multicultural Pedagogy",
-      university: "Hanyang University",
-      location: "South Korea"
-    },
+    
     {
       name: "Kabelo Given Chuma",
       department: "Department of Information Science",
@@ -111,16 +113,22 @@ export default function Organizingcommittee() {
       location: "Malaysia"
     },
     {
-      name: "Muhammad Suleman Memon",
-      department: "Department of Information Technology",
-      university: "University of Sindh",
-      location: "Pakistan"
+      name: "D. Kayathri Devi",
+      department: "Department of Information Technology and Engineering",
+      university: "Amity University",
+      location: "Uzbekistan"
     },
     {
       name: "Bawar Mohammed Faraj",
       department: "Department of Information Technology",
       university: "University of Halabja Computer Science",
       location: "Iraq"
+    },
+    {
+      name: "Ziquan Feng",
+      department: "Department of Multicultural Pedagogy",
+      university: "Hanyang University",
+      location: "South Korea"
     },
     {
       name: "Omar Bin Samin",
@@ -140,7 +148,12 @@ export default function Organizingcommittee() {
       university: "Kerman University of Medical Sciences",
       location: "Iran"
     },
-
+{
+      name: "D. Angeline Benitta",
+      department: "Department of Computer Applications",
+      university: "Hindustan Institute of Technology and Science",
+      location: "India"
+    },
 
     {
       name: "Ledan Qian",
@@ -160,12 +173,12 @@ export default function Organizingcommittee() {
       university: "Khulna University of Engineering and Technology",
       location: "Bangladesh"
     },
-    {
-      name: "V. Mageshwari",
-      department: "Department of Computer Science",
-      university: "PSGR Krishnammal College for Women",
-      location: "India"
-    },
+    // {
+    //   name: "V. Mageshwari",
+    //   department: "Department of Computer Science",
+    //   university: "PSGR Krishnammal College for Women",
+    //   location: "India"
+    // },
     {
       name: "M. Sathish kumar",
       department: "Department of Computer Application",
@@ -178,11 +191,12 @@ export default function Organizingcommittee() {
       university: "Pattimura University",
       location: "Indonesia"
     },
+    
     {
-      name: "D. Angeline Benitta",
-      department: "Department of Computer Applications",
-      university: "Hindustan Institute of Technology and Science",
-      location: "India"
+      name: "Ernesto Carrillo Arellano",
+      department: "Department of Electronics Engineering",
+      university: "Metropolitan Autonomous University",
+      location: "Mexico "
     },
     {
       name: "Sirajuddin Qureshi",
@@ -191,12 +205,12 @@ export default function Organizingcommittee() {
       location: "China"
     },
     {
-      name: "Muhammd Umer Farooq",
-      department: "Department of Computer Science and Information Technology",
-      university: "NED University of Engineering and Technology",
-      location: "Pakistan"
+      name: "Leandro N. Balico",
+      department: "Department of Computer Science",
+      university: "Federal University of Roraima",
+      location: "Brazil"
     },
-  ];
+  ];   
 
   return (
     <>

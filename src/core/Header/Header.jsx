@@ -13,6 +13,8 @@ const Header = () => {
     const [dropdown1, setDropdown1] = useState(false);
     const [dropdown2, setDropdown2] = useState(false);
     const [dropdown3, setDropdown3] = useState(false);
+    const [subDropdown, setSubDropdown] = useState(false);
+    const subDropdownRef = useRef(null);
     const [scroll, setScroll] = useState(false);
     const location = useLocation();
     const isActive = location.pathname;
@@ -38,6 +40,10 @@ const Header = () => {
         }
     };
 
+    const toggleSubDropdown = () => {
+        setSubDropdown(!subDropdown);
+    };
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -51,6 +57,9 @@ const Header = () => {
             }
             if (dropdown3Ref.current && !dropdown3Ref.current.contains(event.target)) {
                 setDropdown3(false);
+            }
+            if (subDropdownRef.current && !subDropdownRef.current.contains(event.target)) {
+                setSubDropdown(false);
             }
         };
         document.addEventListener("mousedown", handleClickOutside);
@@ -69,12 +78,30 @@ const Header = () => {
         };
     }, []);
 
+    useEffect(() => {
+        if (location.hash) {
+            const sectionId = location.hash.replace("#", "");
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+    }, [location]);
+
 
     const Aboutus = [
         { name: "About the Conference", path: "/about" },
         { name: "Scope of Conference", path: "/scope" },
-        { name: "Organizing Committee & Editorial Board", path: "/organizing-committee#organize" },
-        // { name: "Editorial Board", path: "#editorial-board" },
+        // { name: "Organizing Committee & Editorial Board", path: "/organizing-committee#organize" },
+        {
+            name: "Editorial Board",
+            path: "/editorial-board",
+            subItems: [
+                { name: "Organizing Committee", path: "/editorial-board#organizing-committee" },
+                { name: "Technical Committee", path: "/editorial-board#technical-committee" },
+                { name: "Advisory Committee", path: "/editorial-board#advisory-committee" },
+            ],
+        },
     ];
 
     const AuthorDesk = [
@@ -146,39 +173,53 @@ const Header = () => {
                                 </div>
                             )} */}
                             {dropdown1 && (
-                                <div className="absolute bg-white border border-gray-600 shadow-lg mt-2 rounded">
-                                    <ul className="p-2 text-lg max-w-none w-full whitespace-nowrap">
-                                        {Aboutus.map((link, index) =>
-                                            link.path.startsWith("#") ? (
-                                                <button
-                                                    key={index}
-                                                    onClick={() => {
-                                                        setDropdown1(false);
-                                                        const id = link.path.substring(1);
-                                                        const el = document.getElementById(id);
-                                                        if (el) {
-                                                            el.scrollIntoView({ behavior: "smooth" });
-                                                        }
-                                                    }}
-                                                    className="text-left"
-                                                >
-                                                    <li className="px-4 py-2 text-gray-900 namdhinggo-bold">
-                                                        {link.name}
-                                                    </li>
-                                                </button>
-                                            ) : (
-                                                <Link
-                                                    key={index}
-                                                    to={link.path}
-                                                    onClick={() => setDropdown1(false)}
-                                                    className="!w-full"
-                                                >
-                                                    <li className="px-4 py-2 text-gray-900 namdhinggo-bold">
-                                                        {link.name}
-                                                    </li>
-                                                </Link>
-                                            )
-                                        )}
+                                <div className="absolute bg-white border shadow-lg mt-2 rounded">
+                                    <ul className="p-2 text-base max-w-none w-full whitespace-nowrap">
+                                        {Aboutus.map((link, index) => (
+                                            <li key={index} className="relative">
+                                                {link.subItems ? (
+                                                    <div ref={subDropdownRef}>
+                                                        <Link
+                                                            onClick={toggleSubDropdown}
+                                                            className="flex items-center gap-1 px-4 py-2 text-gray-900 inter-medium"
+                                                        >
+                                                            {link.name}
+                                                            <FaChevronDown className={`${subDropdown ? 'rotate-180' : 'rotate-0'} duration-200 text-xs`} />
+                                                        </Link>
+                                                        {subDropdown && (
+                                                            <div className="ml-4 pl-2 bg-white rounded">
+                                                                <ul className=" text-base max-w-none w-full whitespace-nowrap">
+                                                                    {link.subItems.map((subLink, subIndex) => (
+                                                                        <Link
+                                                                            key={subIndex}
+                                                                            onClick={() => {
+                                                                                setDropdown1(false);
+                                                                                setSubDropdown(false);
+                                                                            }}
+                                                                            to={subLink.path}
+                                                                            className="!w-full"
+                                                                        >
+                                                                            <li className="px-4 py-2 text-gray-900 inter-medium">{subLink.name}</li>
+                                                                        </Link>
+                                                                    ))}
+                                                                </ul>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ) : (
+                                                    <Link
+                                                        onClick={() => {
+                                                            setDropdown1(false);
+                                                            setSubDropdown(false);
+                                                        }}
+                                                        to={link.path}
+                                                        className="!w-full"
+                                                    >
+                                                        <li className="px-4 py-2 text-gray-900 inter-medium">{link.name}</li>
+                                                    </Link>
+                                                )}
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             )}
@@ -225,6 +266,9 @@ const Header = () => {
                 setDropdown2={setDropdown2}
                 dropdown1={dropdown1}
                 dropdown2={dropdown2}
+                subDropdown={subDropdown}
+                setSubDropdown={setSubDropdown}
+                subDropdownRef={subDropdownRef}
             />
             {MenuOpen && (
                 <div
