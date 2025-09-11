@@ -39,23 +39,12 @@ export default function Editorboard() {
 
 
   const advisorycommittee = [
-    {
-      name: "Dr. Ernesto Carrillo Arellano",
-      department: "Department of Electronics Engineering",
-      university: "Metropolitan Autonomous University",
-      location: "Mexico"
-    },
+
     {
       name: "Dr. Abderrahim Bouchair",
       department: "Department of Computer Science",
       university: "University of Oran 1",
       location: "Algeria"
-    },
-    {
-      name: "Dr.Md Foysal",
-      department: "Department of Electronics and Communication Engineering",
-      university: "Khulna University of Engineering and Technology",
-      location: "Bangladesh"
     },
     {
       name: "Dr. Leo John Baptist",
@@ -64,17 +53,31 @@ export default function Editorboard() {
       location: "Botswana"
     },
     {
+      name: "Dr.Md Foysal",
+      department: "Department of Electronics and Communication Engineering",
+      university: "Khulna University of Engineering and Technology",
+      location: "Bangladesh"
+    },
+    {
+      name: "Dr.E. Kusuma kumari",
+      department: "Department of Electronics and Communication Engineering",
+      university: "Vasavi College of Engineering",
+      location: "India"
+    },
+    {
+      name: "Dr. Ernesto Carrillo Arellano",
+      department: "Department of Electronics Engineering",
+      university: "Metropolitan Autonomous University",
+      location: "Mexico"
+    },
+
+    {
       name: "Dr. Marcelo MS Souza",
       department: "Department of Computer Science",
       university: "Ceara Federal University",
       location: "Brazil"
     },
-    {
-      name: "Dr. Huiliang Zhao",
-      department: "Department of Product Design",
-      university: "Guizhou Minzu University",
-      location: "China"
-    },
+
     {
       name: "Dr. Aram Sabr Tahr",
       department: "Department of Computer Science",
@@ -94,28 +97,36 @@ export default function Editorboard() {
       location: "India"
     },
     {
-      name: "Dr.E. Kusuma kumari",
-      department: "Department of Electronics and Communication Engineering",
-      university: "Vasavi College of Engineering",
-      location: "India"
+      name: "Dr. Huiliang Zhao",
+      department: "Department of Product Design",
+      university: "Guizhou Minzu University",
+      location: "China"
     },
+
     {
       name: "Dr.A. Antonidoss",
       department: "Department of Computer Science and Business Systems",
       university: "Hindustan Institute of Technology",
       location: "India"
     },
-    {
-      name: "Dr.T. Jayasankar",
-      department: "Department of Electronics and Communication Engineering",
-      university: "Anna University",
-      location: "India"
-    },
+
     {
       name: "Dr. Aria Hendrawan",
       department: "Department of Computer Science",
       university: "University of Semarang",
       location: "Indonesia"
+    },
+    {
+      name: "Dr. Wasan Alamro",
+      department: "Department of Electrical Engineering",
+      university: "Auckland University of Technology",
+      location: "New Zealand"
+    },
+    {
+      name: "Dr. Zouhour El-Abiad",
+      department: "Department of Computer Science",
+      university: "ESA Business School",
+      location: "Lebanon"
     },
     {
       name: "Dr. Mohammad Tolou Askari",
@@ -135,29 +146,25 @@ export default function Editorboard() {
       university: "American University of the Middle East",
       location: "Kuwait"
     },
-    {
-      name: "Dr. Zouhour El-Abiad",
-      department: "Department of Computer Science",
-      university: "ESA Business School",
-      location: "Lebanon"
-    },
+
     {
       name: "Dr. Hadhrami Ab. Ghani",
       department: "Department of  Data Science and Computing",
       university: "Universiti Malaysia Kelantan",
       location: "Malaysia"
     },
-    {
-      name: "Dr. Wasan Alamro",
-      department: "Department of Electrical Engineering",
-      university: "Auckland University of Technology",
-      location: "New Zealand"
-    },
+
     {
       name: "Dr. Joseph M. Mom",
       department: "Department of Electrical and Electronics Engineering",
       university: "Joseph Sarwuan Tarka University",
       location: "Nigeria"
+    },
+    {
+      name: "Dr.T. Jayasankar",
+      department: "Department of Electronics and Communication Engineering",
+      university: "Anna University",
+      location: "India"
     },
     {
       name: "Dr. Muhammad Umair Hassan",
@@ -166,10 +173,23 @@ export default function Editorboard() {
       location: "Norway"
     },
     {
+      name: "Dr. Sakthivel Velusamy",
+      department: "Department of Aerospace Information Engineering",
+      university: "Konkuk University",
+      location: "South Korea"
+    },
+
+    {
       name: "Dr. Shahzad Ali",
       department: "Department of Computer Science",
       university: "Dawood University Of Engineering & Technology Karachi",
       location: "Pakistan"
+    },
+    {
+      name: "Dr. Muhammad Asif Khan",
+      department: "Department of Information Technology",
+      university: "Qatar University",
+      location: "Qatar"
     },
     {
       name: "Dr. Asma Sbeih",
@@ -184,10 +204,10 @@ export default function Editorboard() {
       location: "Philippines"
     },
     {
-      name: "Dr. Muhammad Asif Khan",
+      name: "Dr. Ammar Amjad",
       department: "Department of Information Technology",
-      university: "Qatar University",
-      location: "Qatar"
+      university: "National Yang Ming Chiao Tung University",
+      location: "Taiwan"
     },
     {
       name: "Dr. Ali Rizwan",
@@ -196,29 +216,20 @@ export default function Editorboard() {
       location: "Saudi Arabia"
     },
     {
-      name: "Dr. Kabelo Given Chuma",
-      department: "Department of Information Science",
-      university: "University of South Africa",
-      location: "South Africa"
-    },
-    {
-      name: "Dr. Sakthivel Velusamy",
-      department: "Department of Aerospace Information Engineering",
-      university: "Konkuk University",
-      location: "South Korea"
-    },
-    {
       name: "Dr. Saminda Premaratne",
       department: "Department of Information Technology",
       university: "University of Moratuwa",
       location: "Sri Lanka"
     },
     {
-      name: "Dr. Ammar Amjad",
-      department: "Department of Information Technology",
-      university: "National Yang Ming Chiao Tung University",
-      location: "Taiwan"
+      name: "Dr. Kabelo Given Chuma",
+      department: "Department of Information Science",
+      university: "University of South Africa",
+      location: "South Africa"
     },
+
+
+
 
   ]
 
@@ -228,6 +239,12 @@ export default function Editorboard() {
       department: "Department of Computer Science and Engineering",
       university: "Krirk University",
       location: "Thailand"
+    }, 
+    {
+      name: "Dr. Sidaoui Boutkhil",
+      department: "Department of Computer Science",
+      university: "Salhi Ahmed University of Naama",
+      location: "Algeria"
     },
     {
       name: "Dr. Shriram Pandey",
@@ -248,23 +265,30 @@ export default function Editorboard() {
       location: "Taiwan"
     },
     {
+      name: "Dr. Masoud Asghari",
+      department: "Department of Computer Engineering",
+      university: "University of Maragheh",
+      location: "Iran"
+    },
+    {
       name: "Dr. Abderrahim Boukhalat",
       department: "Department of Computer Science",
       university: "University Mohamed Boudiaf",
       location: "Algeria"
     },
+   {
+      name: "Dr. Theopilus Bayu Sasongko",
+      department: "Department of Informatics",
+      university: "University of Amikom Yogyakarta",
+      location: "Indonesia"
+    },
     {
-      name: "Dr. Sidaoui Boutkhil",
+      name: "Dr. Ghulam Gilanie",
       department: "Department of Computer Science",
-      university: "Salhi Ahmed University of Naama",
-      location: "Algeria"
+      university: "The Islamia University of Bahawalpur",
+      location: "Pakistan"
     },
-    {
-      name: "Dr.Md Moshiur Rahman",
-      department: "Department of Computer Science and Engineering",
-      university: "Bangladesh Open University",
-      location: "Bangladesh"
-    },
+    
     {
       name: "Dr.Md Al Mustanjid",
       department: "Department of Software Engineering",
@@ -284,10 +308,10 @@ export default function Editorboard() {
       location: "India"
     },
     {
-      name: "Dr. Theopilus Bayu Sasongko",
-      department: "Department of Informatics",
-      university: "University of Amikom Yogyakarta",
-      location: "Indonesia"
+      name: "Dr. Ayodeji Oludola",
+      department: "Department of Computer Science and Engineering",
+      university: "Obafemi Awolowo University",
+      location: "Nigeria"
     },
     {
       name: "Dr. Sinarring Azi Laga",
@@ -295,12 +319,7 @@ export default function Editorboard() {
       university: "University of Hayam Wuruk Perbanas",
       location: "Indonesia"
     },
-    {
-      name: "Dr. Masoud Asghari",
-      department: "Department of Computer Engineering",
-      university: "University of Maragheh",
-      location: "Iran"
-    },
+    
     {
       name: "Dr. Abolfazl Gandomi",
       department: "Department of Computer Engineering",
@@ -314,10 +333,10 @@ export default function Editorboard() {
       location: "Nigeria"
     },
     {
-      name: "Dr. Ayodeji Oludola",
+      name: "Dr.Md Moshiur Rahman",
       department: "Department of Computer Science and Engineering",
-      university: "Obafemi Awolowo University",
-      location: "Nigeria"
+      university: "Bangladesh Open University",
+      location: "Bangladesh"
     },
     {
       name: "Dr. Saqib Amin",
@@ -325,12 +344,7 @@ export default function Editorboard() {
       university: "iphah International University ",
       location: "Pakistan"
     },
-    {
-      name: "Dr. Ghulam Gilanie",
-      department: "Department of Computer Science",
-      university: "The Islamia University of Bahawalpur",
-      location: "Pakistan"
-    },
+    
     {
       name: "Dr. Daban Kadhim Omar Dabbagh",
       department: "Department of Geography",
