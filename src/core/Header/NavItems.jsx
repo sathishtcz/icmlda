@@ -37,7 +37,7 @@ const NavItems = ({ ToggleMenu, MenuOpen, isActive, subDropdown, setSubDropdown,
         // { name: "Organizing Committee", path: "/organizing-committee" },
         {
             name: "Editorial Board",
-            path: "/editorial-board",
+            // path: "/editorial-board",
             subItems: [
                 { name: "Organizing Committee", path: "/editorial-board#organizing-committee" },
                 { name: "Technical Committee", path: "/editorial-board#technical-committee" },
