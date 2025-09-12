@@ -182,7 +182,7 @@ export default function Editorboard() {
     {
       name: "Dr. Shahzad Ali",
       department: "Department of Computer Science",
-      university: "Dawood University Of Engineering & Technology Karachi",
+      university: "Dawood University Of Engineering and Technology Karachi",
       location: "Pakistan"
     },
     {
@@ -341,7 +341,7 @@ export default function Editorboard() {
     {
       name: "Dr. Saqib Amin",
       department: "Department of Information Technology",
-      university: "iphah International University ",
+      university: "Riphah International University ",
       location: "Pakistan"
     },
     
