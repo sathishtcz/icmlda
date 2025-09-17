@@ -96,12 +96,12 @@ export default function Editorboard() {
       university: "Vel Tech Rangarajan Dr.Sagunthala R&D Institute of Science and Technology",
       location: "India"
     },
-    {
-      name: "Dr. Huiliang Zhao",
-      department: "Department of Product Design",
-      university: "Guizhou Minzu University",
-      location: "China"
-    },
+    // {
+    //   name: "Dr. Huiliang Zhao",
+    //   department: "Department of Product Design",
+    //   university: "Guizhou Minzu University",
+    //   location: "China"
+    // },
 
     {
       name: "Dr.A. Antonidoss",

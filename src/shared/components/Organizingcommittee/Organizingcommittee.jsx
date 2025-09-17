@@ -244,7 +244,7 @@ export default function Organizingcommittee() {
           <p id="editorial-board" className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px] ">The Organizing Committee of ICMLDA 2025 comprises a dedicated team of experts, scholars, and professionals committed to delivering a world-class conference experience. With a shared vision of advancing machine learning and data analytics, the committee oversees every aspect of the event — from program planning and speaker selection to logistics and outreach. Our members represent leading academic institutions, research organizations, and industry bodies, ensuring a perfect blend of innovation, academic integrity, and practical relevance. Together, we aim to create a collaborative, engaging, and impactful platform that inspires future advancements in intelligent data technologies.</p>
         </div>
       </div>
-      <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-5 mt-5"  >
+      {/* <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-5 mt-5"  >
         <h2 className="text-[#FABF2B] inter-semibold mb-7">EDITORIAL BOARD</h2>
         <div className="grid grid-cols-1 divide-y border border-[#22367C] max-w-[80rem] *:**:">
           {editors.map((editor, index) => (
@@ -261,7 +261,7 @@ export default function Organizingcommittee() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* <h3 className="inter-semibold text-[25px] lg:text-[40px]  text-center lg:mt-10 mt-5">The Core Team of ICMLDA 2025</h3>
       <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
