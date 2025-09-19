@@ -32,10 +32,10 @@ function Homepage() {
               </div>
 
               <div className="flex gap-3 sm:gap-4 lg:gap-5">
-                <div className="flex items-center gap-2 bg-[#FFDB00] text-black px-4 py-2 rounded-md cursor-pointer">
+                {/* <div className="flex items-center gap-2 bg-[#FFDB00] text-black px-4 py-2 rounded-md cursor-pointer">
                   <PiCalendarCheckFill className="text-2xl md:text-2xl" />
                   <p className="text-sm md:text-base lg:text-lg inter-medium">3<sup>rd</sup> September, 2025</p>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition duration-300 cursor-pointer">
                   <IoLocationOutline className="text-2xl md:text-2xl" />
                   <p className="text-sm md:text-base lg:text-lg">Changi, Singapore</p>
@@ -218,10 +218,10 @@ function Homepage() {
 
       {/* Join Us at INCOCSA 2025 */}
       <div className="xl:max-w-[1450px]  md:max-w-[920px] mx-auto p-4 lg:mt-10 mt-5">
-        <h4 className="namdhinggo-semibold text-[25px] lg:text-[40px] text-center">ICMLDA 2025: Innovate & Connect</h4>
+        <h4 className="namdhinggo-semibold text-[25px] lg:text-[40px] text-center">ICMLDA : Innovate & Connect</h4>
         <div className="grid grid-cols-1 lg:grid-cols-3  lg:gap-20 gap-10 lg:mt-8 mt-4 mx-auto">
           <div className="col-span-2">
-            <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px]">Immerse yourself in the forefront of innovation at the International Conference on Machine Learning and Data Analytics (ICMLDA) 2025, where the brightest minds in AI and data science converge to shape the future. Experience transformative research presentations that unveil the latest breakthroughs in machine learning algorithms, data analytics techniques, and their real-world applications across industries like healthcare, finance, and sustainability.</p>
+            <p className="inter-regular text-gray-700 sm:text-base md:text-lg lg:text-[16px] text-justify leading-[30px]">Immerse yourself in the forefront of innovation at the International Conference on Machine Learning and Data Analytics, where the brightest minds in AI and data science converge to shape the future. Experience transformative research presentations that unveil the latest breakthroughs in machine learning algorithms, data analytics techniques, and their real-world applications across industries like healthcare, finance, and sustainability.</p>
             <div className="flex flex-col gap-5 mt-7">
               <p className="text-black inter-bold text-lg">Connect with Industry Leaders</p>
               <div className="flex flex-row gap-1">
@@ -244,7 +244,7 @@ function Homepage() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#FFDB00] p-2 rounded-md py-5">
+            {/* <div className="bg-[#FFDB00] p-2 rounded-md py-5">
               <div className="flex flex-row items-center gap-2 px-5">
                 <PiCalendarCheckFill className='text-4xl text-black' />
                 <div className="flex flex-col gap-2">
@@ -252,7 +252,7 @@ function Homepage() {
                   <p className="inter-semibold sm:text-base md:text-lg lg:text-[16px] text-black">3<sup>rd</sup> September, 2025</p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="bg-[#FFDB00] p-2 rounded-md py-5">
               <div className="flex flex-row items-center gap-2 px-5">
                 <IoIosAlarm className='text-4xl text-black' />
